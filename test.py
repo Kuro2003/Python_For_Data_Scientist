@@ -1,10 +1,7 @@
 import pandas as pd
 import numpy as np
-df = pd.DataFrame({'key1' : ['a', 'a', 'b', 'b', 'a'],
-                    'key2' : ['one', 'two', 'one', 'two', 'one'],
-                    'data1' : np.random.randn(5),
-                    'data2' : np.random.randn(5)})
 
-grouped = df['data1'].groupby(df['key1'])
-print(grouped.head())
-
+arr = np.random.rand(4,4)
+print(arr)
+res = np.where(arr>0,arr**2,-2)
+print(res)
