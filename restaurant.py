@@ -17,8 +17,7 @@ class IceCreamStand(Restaurant):
 	def restaurant_flavor(self):
 		print(f'There are {self.flavors} flavors')
 
-my_restaurant = IceCreamStand('Cuong','Snack')
-print(my_restaurant.describe_restaurant()) 
-print(my_restaurant.numbers_served()) 
-print(my_restaurant.restaurant_flavor()) 
-
+# my_restaurant = IceCreamStand('Cuong','Snack')
+# print(my_restaurant.describe_restaurant()) 
+# print(my_restaurant.numbers_served()) 
+# print(my_restaurant.restaurant_flavor()) 
