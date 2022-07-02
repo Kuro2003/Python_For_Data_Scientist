@@ -1,5 +1,8 @@
-# method 1: 
-with open('data.txt') as file:
-	f = file.read()
-	f = f.replace('Python','Cuong')
-	print(f)
+filename = ['cats.txt','dogs.txt']
+try:
+	for file in filename:
+		with open(file,'r') as f:
+			files = f.read()
+			print(files)
+except:
+	print("File Not Found !!!")
