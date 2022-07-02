@@ -1,14 +1,3 @@
-RAP
-Rap Music
-4
-5
-Cua La Do
-https://youtu.be/vsKGPhzniqk
-Con Tho Con Go
-https://youtu.be/Rh85Vqummy8
-Phi Hanh Gia
-https://youtu.be/iMzMRhBx9mQ
-Luu Ly
-https://youtu.be/5KU2WulgKRk
-Sai Gon Dau Co Lanh
-https://youtu.be/nAvmPdtX9JE
+In Python you can ...
+In Python you can ...
+In Python you can ...
