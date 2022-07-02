@@ -1,8 +1,8 @@
-filename = ['cats.txt','dogs.txt']
-try:
-	for file in filename:
-		with open(file,'r') as f:
-			files = f.read()
-			print(files)
-except:
-	print("File Not Found !!!")
+from a import *
+user_1 = int(input("Enter number 1: "))
+user_2 = int(input("Enter number 2: "))
+res = sum_number(user_1,user_2)
+res1 = subtract_number(user_1,user_2)
+print(res)
+print(res1)
+
