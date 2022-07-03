@@ -1,11 +1,31 @@
 import json
-def greet_user():
-    try :
-        with open('favoritenumber.json','r') as f:
-            number = json.load(f)
-        print(f"I know your favorite number! It's {number} ")
+def get_stored_information():
+    try:
+        with open('username.json','r') as f:
+            username = json.load(f) 
     except:
-        number = int(input("Enter your favorite number: "))
-        with open('favoritenumber.json','w') as f:
-            json.dump(number,f)
-        print("We'll remember your favorite number!!!")
+        return None
+    else:
+        return username
+
+def get_new_information():
+    username = input("Enter your name: ")
+    with open("username.json",'w') as f:
+        json.dump(username,f)
+    return username
+
+def check_user_final(username):
+    check = input(f"Are you {username} (Y/N): ")
+    if check ==  'Y':
+        return True
+    else:
+        return False
+
+def greet_user():
+    username = get_stored_information()
+    if check_user_final(username) :
+        print(f'Welcome back,{username}')
+    else:
+        username = get_new_information()
+        print("we'll remember you when you come back, {}".format(username))
+greet_user() 
